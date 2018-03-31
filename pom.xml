@@ -7,13 +7,6 @@
     <groupId>us.nullbytes.basic</groupId>
     <artifactId>reflection</artifactId>
     <version>1.0.0</version>
-    <dependencies>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.0.0</version>
-        </dependency>
-    </dependencies>
     <name>Reflection</name>
     <description>Reflection basics</description>
     <packaging>jar</packaging>
