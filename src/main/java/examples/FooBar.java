@@ -21,9 +21,6 @@ public class FooBar {
 	}
 
 	public static void main(String[] args) throws ReflectiveOperationException {
-		Class.forName("examples.FooBar");
-		new ClassResolver().use("examples.FooBar").resolveWithPolicy(ResolvePolicy.VERBOSE);
-		new FooBar();
 		ExpressedSuplement.inject(Foo.class);
 		Foo.bar();
 		Bar bar = new Bar();
