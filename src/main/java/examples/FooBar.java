@@ -37,11 +37,11 @@ public class FooBar {
 
 	static class Foo {
 
-		@ExpressedConstructor(clazz = "examples.FooBar", resolver = ResolvePolicy.VERBOSE)
+		@ExpressedConstructor(clazz = "examples.FooBar")
 		private static Constructor<?> constructor;
-		@ExpressedMethod(clazz = "examples.FooBar", name = "print", policy = MemberPolicy.FIRST, resolver = ResolvePolicy.VERBOSE)
+		@ExpressedMethod(clazz = "examples.FooBar", name = "print", policy = MemberPolicy.FIRST)
 		private static Method method;
-		@ExpressedField(clazz = "examples.FooBar", name = "basic", policy = MemberPolicy.FIRST, resolver = ResolvePolicy.VERBOSE)
+		@ExpressedField(clazz = "examples.FooBar", name = "basic", policy = MemberPolicy.FIRST)
 		private static Field field;
 
 		public static void bar() throws ReflectiveOperationException {
@@ -53,11 +53,11 @@ public class FooBar {
 
 	static class Bar {
 
-		@ExpressedConstructor(clazz = "examples.FooBar", parameters = {String.class}, resolver = ResolvePolicy.VERBOSE)
+		@ExpressedConstructor(clazz = "examples.FooBar", parameters = {String.class})
 		private Constructor<?> constructor;
-		@ExpressedMethod(clazz = "examples.FooBar", parameters = {String.class}, policy = MemberPolicy.FIRST, resolver = ResolvePolicy.VERBOSE)
+		@ExpressedMethod(clazz = "examples.FooBar", parameters = {String.class}, policy = MemberPolicy.FIRST)
 		private Method method;
-		@ExpressedField(clazz = "examples.FooBar", type = String.class, policy = MemberPolicy.FIRST, resolver = ResolvePolicy.VERBOSE)
+		@ExpressedField(clazz = "examples.FooBar", type = String.class, policy = MemberPolicy.FIRST)
 		private Field field;
 
 		public void foo() throws ReflectiveOperationException {
