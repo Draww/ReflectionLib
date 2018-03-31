@@ -16,8 +16,8 @@ public abstract class AbstractResolver<K, V> {
 
 	public K resolveWithPolicy(ResolvePolicy policy) {
 		Iterator<V> argumentIterator = arguments.iterator();
-		for (V next = argumentIterator.next(); argumentIterator.hasNext(); ) {
-			K result = resolve(next);
+		while (argumentIterator.hasNext()) {
+			K result = resolve(argumentIterator.next());
 			if (result != null) {
 				return result;
 			}
